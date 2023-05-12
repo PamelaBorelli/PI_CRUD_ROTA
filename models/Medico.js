@@ -19,7 +19,7 @@ const medicoSchema = mongoose.Schema(
             type: String,
             required: [true, "Informe uma senha"]
         },
-        datanasc: {
+        datanmec: {
             type: Date,
 	    required: [true, "Informe sua data de nascimento"]
         },
@@ -51,7 +51,7 @@ const medicoSchema = mongoose.Schema(
         },
         especialidade: {
             type: String,
-            enum: ['cardiologista', 'endocrono', 'clinico'],
+            enum: ['cardiologista', 'endocrinologista', 'clinico', 'ginecologista', 'pediatra', 'otorrino'],
             default: 'clinico',
             required: true
         }
